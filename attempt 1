@@ -1,0 +1,16 @@
+//The Random Game
+
+function RandomGame (){
+  let number;
+  let count = 0;
+  let attempts = setInterval(function(){
+    number = Math.random ();
+    count++;
+    if (number>0.75){
+      clearInterval(attempts);
+      console.log("It took you" + attempt + "attempt(s) to win!");
+    }
+   },1000);
+  }
+    
+RandomGame();
